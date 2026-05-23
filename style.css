@@ -1,0 +1,381 @@
+.box {
+    opacity: 0;
+    transition: all 1s ease-out; /* Smooth transition */
+    padding: 20px;
+    margin: 100px;
+}
+
+/* Initial positions */
+.right-pop { transform: translateX(100px); }
+.left-pop { transform: translateX(-100px); }
+
+/* The class we add via JS when it scrolls into view */
+.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+
+
+
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#050816;
+    color:white;
+}
+.home-pic img {
+  width: 550px;        /* makes image smaller */
+  height: auto;        
+  border-radius: 20px; /* rounded square corners */
+}
+.container{
+    display:flex;
+    min-height:100vh;
+}
+
+/* Sidebar */
+
+.sidebar{
+    width:250px;
+    background:#090d1f;
+    padding:30px;
+    border-right:1px solid rgba(255,255,255,0.1);
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+    margin-bottom:50px;
+    color:#b46cff;
+}
+
+.sidebar nav{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.sidebar nav a{
+    color:#c7c7c7;
+    text-decoration:none;
+    font-size:16px;
+    transition:0.3s;
+}
+
+.sidebar nav a:hover{
+    color:#b46cff;
+}
+
+.hack-btn{
+    margin-top:40px;
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:12px;
+    background:linear-gradient(90deg,#8f3fff,#ff4fd8);
+    color:white;
+    font-weight:600;
+    cursor:pointer;
+}
+
+/* Main */
+
+.main-content{
+    flex:1;
+    padding:40px;
+}
+
+/* Hero */
+
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:40px;
+}
+
+.hero-left{
+    max-width:600px;
+}
+
+.badge{
+    background:rgba(255,255,255,0.08);
+    padding:10px 18px;
+    border-radius:30px;
+    display:inline-block;
+    margin-bottom:25px;
+    color:#ddd;
+}
+
+.hero h1{
+    font-size:72px;
+    line-height:1.1;
+    margin-bottom:20px;
+}
+
+.hero h1 span{
+    color:#b46cff;
+}
+
+.hero p{
+    color:#9ca3af;
+    line-height:1.7;
+    margin-bottom:30px;
+    font-size:18px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:20px;
+}
+
+.primary-btn{
+    padding:16px 28px;
+    border:none;
+    border-radius:14px;
+    background:linear-gradient(90deg,#8f3fff,#ff4fd8);
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    font-weight:600;
+}
+
+.secondary-btn{
+    padding:16px 28px;
+    border:1px solid rgba(255,255,255,0.2);
+    background:transparent;
+    color:white;
+    border-radius:14px;
+    cursor:pointer;
+}
+
+.hero-right img{
+    width:500px;
+    animation:float 4s ease-in-out infinite;
+}
+
+/* Cards */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+    margin-top:60px;
+}
+
+.card{
+    background:rgba(255,255,255,0.05);
+    padding:30px;
+    border-radius:24px;
+    border:1px solid rgba(255,255,255,0.08);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    border-color:#b46cff;
+}
+
+.card h3{
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#9ca3af;
+    line-height:1.6;
+}
+
+/* Templates */
+
+.templates{
+    margin-top:60px;
+    h1{
+        font-size:20px;
+        font-style:italic;
+        margin-bottom:30px;
+    }
+    color: #8f3fff;
+    display:grid;
+    p { color: rgb(242, 243, 242); }
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+.para.description
+{
+    color: #9ca3af;
+
+}
+
+/* 1st code---------------
+.template-card{
+    height:220px;
+    border-radius:24px;
+    background:linear-gradient(
+      135deg,
+      rgba(143,63,255,0.3),
+      rgba(255,79,216,0.15)
+    );
+    border:1px solid rgba(255,255,255,0.08);
+    display:flex;
+    align-items:end;
+    padding:25px;
+    transition:0.3s;
+} */
+/* <!--2nd code--> */
+.template-card {
+    font-weight: bold;
+    height: 220px;
+    border-radius: 24px;
+    background: linear-gradient(135deg, rgba(143,63,255,0.3), rgba(255,79,216,0.15));
+    border: 1px solid rgba(255,255,255,0.08);
+    display: flex;
+    flex-direction: column; /* ADD THIS */
+    justify-content: flex-end; /* This keeps text at the bottom, like you had before */
+    padding: 25px;
+    transition: 0.3s;
+} 
+
+.template-card:hover{
+    transform:scale(1.03);
+}
+
+/* Animation */
+
+@keyframes float{
+    0%{
+        transform:translateY(0px);
+    }
+    50%{
+        transform:translateY(-20px);
+    }
+    100%{
+        transform:translateY(0px);
+    }
+}
+
+/* Responsive */
+
+@media(max-width:1100px){
+
+    .hero{
+        flex-direction:column;
+    }
+
+    .cards,
+    .templates{
+        grid-template-columns:1fr 1fr;
+    }
+}
+
+@media(max-width:700px){
+
+    .container{
+        flex-direction:column;
+    }
+
+    .sidebar{
+        width:100%;
+    }
+
+    .hero h1{
+        font-size:48px;
+    }
+
+    .cards,
+    .templates{
+        grid-template-columns:1fr;
+    }
+
+    .hero-right img{
+        width:100%;
+    }
+}
+
+
+
+/* .profile-pic {
+
+width: 50px;
+
+height: 20px;
+
+margin: 0 auto 20px;
+
+background: url('https://via.placeholder.com/140') center/cover;
+
+border-radius: 50%;
+
+box-shadow: 0 0 20px rgba(214, 160, 42, 0.6); //circle bg blur colour//
+
+animation: float 3s ease-in-out infinite;
+} */
+
+
+.dashboard-container {
+    display: grid;
+    grid-template-columns: 80px 1fr 350px; /* Sidebar | Main | Widgets */
+    gap: 20px;
+    background: #050505;
+    color: white;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.create-card, .chat-card, .widget {
+    background: #111;
+    border: 1px solid #222;
+    border-radius: 20px;
+    padding: 24px;
+}
+
+.footer-cta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.build-box {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+
+
+/* Ensure the body is dark */
+body {
+    background-color: #050505;
+    color: #ffffff;
+}
+
+/* Base style for all your new sections */
+.create-card, .chat-card, .widget-card {
+    background-color: #111111; /* Dark Grey */
+    border: 1px solid #222222; /* Subtle Border */
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Style for the buttons to pop */
+button {
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}

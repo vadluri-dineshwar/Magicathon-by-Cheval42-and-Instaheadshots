@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HackFuel</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+   <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background: #050505; color: #ffffff; font-family: 'Inter', sans-serif; }
+        .gradient-text { background: linear-gradient(90deg, #3b82f6, #8b5cf6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    
+
+
+
+
+    </style>
+ 
+</head>
+<body>
+
+
+
+     <header class="navbar">
+    <h1 class="logo">Magicathon</h1>
+
+    
+  
+  </header>
+  <header class="hero">
+    <div id="particles-js"></div>
+    <div class="hero-text">
+      <h1>Welcome to <span>Instaheadshorts</span></h1>
+      <p><strong>"This project is part of my Magicathon conducted by 'Chavel42 and Instaheadshots' company"</strong></p>
+    </div>
+
+    <div class="home-pic">
+          <img src="assets/free meme generator.jpeg" alt="Rocket">
+        </div>
+
+  </header>
+    
+  <div class="container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo">⚡ HackFuel</div>
+
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Build</a>
+        <a href="#">Templates</a>
+        <a href="#">Community</a>
+        <a href="#">Docs</a>
+      </nav>
+
+      <button class="hack-btn">🔥 Hackathon Mode</button>
+    </aside>
+
+    <!-- Main -->
+    <main class="main-content">
+
+      <!-- Hero -->
+      <section class="hero">
+
+        <div class="hero-left">
+          <div class="badge">
+            🚀 24-Hour Challenge. Limitless Ideas.
+          </div>
+
+          <h1>
+            Build fast.<br>
+            Think <span>deep.</span><br>
+            Ship memorable.
+          </h1>
+         
+          <p>
+            Your all-in-one AI toolkit to ideate,
+            build, and launch anything you can imagine — in a day.
+          </p>
+
+          <div class="hero-buttons">
+            <button class="primary-btn">Start Building 🚀</button>
+            <button class="secondary-btn">Explore Templates</button>
+            
+          </div>
+        </div>
+
+        <!-- <div class="home-pic">
+          <img src="assets/free meme generator.jpeg" alt="Rocket">
+        </div> -->
+
+      </section>
+
+      <!-- Feature Cards -->
+      <section class="cards">
+
+        <div class="card">
+          <h3>🤖 AI Copilot</h3>
+          <p>Your intelligent partner for ideas, coding and workflow.</p>
+        </div>
+
+        <div class="card">
+          <h3>⚡ Multiple Models</h3>
+          <p>Use OpenRouter APIs and multiple LLMs instantly.</p>
+        </div>
+
+        <div class="card">
+          <h3>🚀 Build Anything</h3>
+          <p>From meme generators to AI copilots and voice apps.</p>
+        </div>
+
+        <div class="card">
+          <h3>🌍 Ship & Share</h3>
+          <p>Deploy and showcase your projects beautifully.</p>
+        </div>
+
+      </section>
+
+      <!-- Template Cards -->
+      <section class="templates">
+
+        <div class="template-card">
+          <h1>Meme Generator</h1>
+          <p>Create funny memes instantly
+          </p>
+        </div>
+
+        <div class="template-card">
+          <h1>AI Copilot
+          </h1>
+          <p>Your smart coding assistant</p>
+             </p>
+          
+        </div>
+
+        <div class="template-card"> 
+          <h1>Image Studio</h1>
+           <p>Design and edit visuals easily</p> 
+             </p>
+        </div>
+
+        <div class="template-card">
+          <h1>Voice App</h1>
+           <p>
+             Convert speech into actions
+            </p>
+        </div>
+
+      </section>
+
+    </main>
+
+  </div>
+
+<script src="script.js"></script>
+
+
+<div class="bg-black text-white min-h-screen p-6 flex gap-6">
+
+  <div class="w-2/3 bg-gray-900 rounded-3xl p-8 border border-gray-800">
+    <h2 class="text-2xl font-bold mb-1">AI Copilot <span class="text-xs bg-purple-600 px-2 py-0.5 rounded">Beta</span></h2>
+    <p class="text-gray-400 mb-6">Your always-on AI partner.</p>
+    
+    <div class="space-y-4">
+      <div class="flex items-start gap-3">
+        <div class="w-8 h-8 rounded-full bg-gray-700"></div> <p class="bg-gray-800 p-4 rounded-xl max-w-md">Hey! I'm your copilot. How can I help you build something amazing today?</p>
+      </div>
+      
+      <div class="flex justify-end">
+        <p class="bg-purple-700 p-4 rounded-xl max-w-md">I want to build a meme generator that goes viral 😎</p>
+      </div>
+
+      <div class="bg-gray-800 p-6 rounded-2xl border border-gray-700">
+        <p class="mb-4">Awesome! Here's a quick plan to get you started:</p>
+        <ul class="space-y-2 mb-6">
+          <li>✅ Select a meme template or let AI suggest one</li>
+          <li>✅ Add custom text & style</li>
+          <li>✅ Generate meme image</li>
+          <li>✅ Share & go viral 🚀</li>
+        </ul>
+        <div class="flex gap-3">
+          <button class="bg-purple-600 px-6 py-2 rounded-lg font-bold">Yes, build it!</button>
+          <button class="bg-gray-700 px-6 py-2 rounded-lg">Show me examples</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="w-1/3 space-y-6">
+    
+    <div class="bg-gradient-to-r from-purple-900 to-black p-6 rounded-2xl border border-gray-700">
+      <h3 class="text-lg font-bold">Deploy in One Click</h3>
+      <p class="text-sm text-gray-400 mb-4">Show your project to the world.</p>
+      <button class="bg-purple-600 px-6 py-2 rounded-lg font-bold">Deploy Now 🚀</button>
+    </div>
+
+    <div class="bg-gray-900 p-6 rounded-2xl border border-gray-800">
+      <div class="flex justify-between items-center mb-4">
+        <h3 class="font-bold">Community Feed</h3>
+        <a href="#" class="text-sm text-blue-400">View all</a>
+      </div>
+      
+      <div class="space-y-4">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center gap-2">
+            <div class="w-8 h-8 rounded-full bg-gray-700"></div>
+            <div>
+              <p class="text-sm">Built a chaos game...</p>
+              <p class="text-xs text-gray-500">@pixel_hacker</p>
+            </div>
+          </div>
+          <p class="text-xs">❤️ 124</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+ <header class="text-center pt-20 pb-16 px-4">
+        <h1 class="text-7xl font-black mb-6 leading-tight">
+            AI-Powered <br> <span class="gradient-text">Photo Intelligence.</span>
+        </h1>
+        <p class="text-slate-400 text-lg mb-10 max-w-lg mx-auto">
+            The leanest engineering team on the planet. Built for global scale, powered by intelligence.
+        </p>
+        <div class="flex justify-center gap-4">
+            <button onclick="document.getElementById('generator').scrollIntoView()" class="bg-blue-600 px-8 py-4 rounded-xl font-bold text-lg hover:bg-blue-500 transition">
+                Start Generating
+            </button>
+        </div>
+    </header>
+
+<section id="generator" class="max-w-xl mx-auto bg-slate-900 p-8 rounded-3xl border border-slate-800 shadow-2xl mb-24">
+    <h2 class="text-3xl font-bold mb-6 text-center" id="studio-title">Meme Magic Studio</h2>
+    
+    <select id="toolSelector" onchange="updateStudio()" class="w-full bg-slate-800 p-3 rounded-lg mb-6 text-white border border-slate-700">
+        <option value="meme">Meme Generator</option>
+        <option value="copilot">AI Copilot</option>
+        <option value="studio">Image Studio</option>
+        <option value="voice">Voice App</option>
+    </select>
+
+
+
+    <div id="dynamic-input">
+        <input type="file" id="mediaInput" class="block w-full text-slate-400 mb-6 file:bg-blue-600 file:px-4 file:py-2 file:rounded-lg cursor-pointer">
+    </div>
+
+    <button onclick="runTool()" class="w-full bg-blue-600 py-4 rounded-xl hover:bg-blue-500 font-bold transition">Execute</button>
+    <div id="output" class="mt-8 p-4 bg-slate-800 rounded-lg text-slate-300 min-h-[100px]">Waiting for input...</div>
+</section>
+
+
+
+
+<div class="dashboard-container">
+    <nav class="sidebar">...</nav>
+
+    <main class="main-workspace">
+        <section id="hero">
+            <h1>Build fast. Think deep. Ship memorable.</h1>
+        </section>
+        
+        <section class="create-card">
+            <h3>Create</h3>
+            <textarea placeholder="Describe your idea..."></textarea>
+            <div class="tags">Web App | AI Tool | Meme | Chat App</div>
+        </section>
+
+        <section class="chat-card">
+            <h3>AI Copilot</h3>
+            <div id="chat-messages">Hey! I'm your copilot.</div>
+            <input type="text" placeholder="Ask anything...">
+        </section>
+
+        <footer class="footer-cta">
+            <p>Built with ❤️ during the hackathon.</p>
+            <div class="build-box">
+                <h3>Ready. Set. Build! 🚀</h3>
+                <button>Start Your Project</button>
+            </div>
+        </footer>
+    </main>
+
+    <aside class="widgets-column">
+        <div class="widget">Hackathon Status</div>
+        <div class="widget">Recent Projects</div>
+        <div class="widget">Community Feed</div>
+    </aside>
+</div>
+
+
+
+
+
+    <script>
+        async function generateMeme() {
+            const formData = new FormData();
+            formData.append('image', document.getElementById('imageInput').files[0]);
+            
+            document.getElementById('output').innerText = "Processing via AI...";
+            const res = await fetch('/generate', { method: 'POST', body: formData });
+            const data = await res.json();
+            document.getElementById('output').innerText = data.reply;
+        
+        
+    
+    function App() {
+  return (
+    <div className="dashboard-grid">
+      <Sidebar />
+      <main className="content">
+        <HeroSection />
+        <div className="widgets-container">
+           <CreateSection />
+           <RecentProjects />
+        </div>
+        <AICopilotChat />
+        <CommunityFeed />
+        <FooterCTA />
+      </main>
+    </div>
+  );
+}
+
+const CreateSection = () => (
+  <section className="create-card">
+    <h2>Create</h2>
+    <p>What do you want to build today?</p>
+    <label name="idea">Describe your idea:</label>
+    <textarea placeholder="Describe your idea..." name="idea" className="w-full bg-black/50 p-4 rounded-xl" />
+    <div className="flex gap-2 mt-4">
+      {['Web App', 'AI Tool', 'Meme', 'Chat App'].map(item => (
+        <button key={item} className="px-4 py-2 border rounded-lg">{item}</button>
+      ))}
+    </div>
+  </section>
+);
+
+
+const AICopilotChat = () => {
+  const [messages, setMessages] = useState([{ text: "How can I help you build?" }]);return (
+    <div className="chat-window bg-gray-900 rounded-2xl p-6">
+      <h3>AI Copilot</h3>
+      <div className="messages-area h-64 overflow-y-auto">
+        {messages.map((m, i) => <div key={i} className="msg">{m.text}</div>)}
+      </div>
+      <input type="text" placeholder="Ask anything..." className="w-full mt-4 bg-transparent border-b" />
+    </div>
+  );
+};
+
+
+
+const FooterCTA = () => (
+  <footer className="mt-20 border-t border-white/10 pt-10 flex justify-between">
+    <p>Built with ❤️ during the hackathon.</p>
+    <div className="bg-gradient-to-r from-purple-600 to-pink-600 p-8 rounded-2xl">
+      <h2>Ready. Set. Build! 🚀</h2>
+      <button className="bg-white text-black px-6 py-2 rounded-lg mt-2">Start Project</button>
+    </div>
+  </footer>
+);
+
+
+
+}
+    </script>
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<sc>
+
+
+<script>
+  particlesJS("particles-js", {
+    "particles": {
+      "number": { "value": 50 },
+      "size": { "value": 3 },
+      "color": { "value": "#ffffff" },
+      "line_linked": {
+        "enable": true,
+        "distance": 150,
+        "color": "#ffffff",
+        "opacity": 0.4,
+        "width": 1
+      },
+      "move": {
+        "enable": true,
+        "speed": 2
+      }
+    },
+    "interactivity": {
+      "events": {
+        "onhover": { "enable": true, "mode": "repulse" }
+      }
+    }
+  });
+  </script>
+
+
+
+
+</body>
+</html>
